@@ -1,0 +1,196 @@
+<!DOCTYPE html> 
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Personal Portfolio Website</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/75a5abaeb4.js" crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+        <div id ="header">
+            <div class="container">
+                <nav>
+                    <img src="Pictures/999999.png" class="logo" style="width: 300px;">
+                    <ul id="sidemenu">
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <i class="fa fa-times"  onclick="closemenu()"></i>
+                    </ul>
+                 <i class="fa fa-bars"  onclick="openmenu()"></i>
+                </nav>
+                <div class="header-text">
+                    <p>Web Developer</p>
+                    <h1>Hi, I'm<br><span>Vibhuti</span> Sahu<br>from India</h1>
+                </div>
+
+            </div> 
+        </div>
+    </body>
+    <!-----------------About------------------------------------>
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="Pictures\vibhuti102.png" alt="left" style="width: 300px;">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About Me</h1>
+                        <p>Hi! My name is Vibhuti Sahu.I'm an aspiring software engineer.Currently,I am pursuing Bachelors of Technology in Infromation Technology from Bhilai Institute of Technology Durg.I'm passionate and hard working.</p>
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Web Development</span><br>HTML<br>CSS<br>Java</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>2024</span><br>Internship at CodSoft</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2022-2026</span><br>B.Tech in Infromation Technology</li>
+                            </ul>
+                        </div>
+                    </div>
+                 </div>
+            </div>
+        </div>
+        <!----------services--------------------------------------------------->
+        <div id="services">
+            <div class="container">
+                <h1 class="sub-title">My Services</h1> 
+                <div class="services-list">
+                    <div>
+                        <i class="fa fa-code" aria-hidden="true"></i>
+                        <h2>Web Developer</h2>
+                        <p> "Welcome to my web design services! I specialize in creating visually appealing and highly functional websites that help businesses and individuals establish a strong online presence. With a focus on user experience and modern design trends, I deliver websites that not only look great but also perform exceptionally well."</p>
+                        <a href="#">"Learn more"</a>
+                    </div>
+                    <div>
+                        <i class="fa fa-css3" aria-hidden="true"></i>
+                        <h2> UI/UX Designer </h2>
+                        <p> "Welcome to my web design services! I specialize in creating visually appealing and highly functional websites that help businesses and individuals establish a strong online presence. With a focus on user experience and modern design trends, I deliver websites that not only look great but also perform exceptionally well."</p>
+                        <a href="#">"Learn more"</a>
+                    </div>
+                    <div>
+                        <i class="fa fa-file-code-o" aria-hidden="true"></i>
+                        <h2>Web Designer</h2>
+                        <p> "Welcome to my web design services! I specialize in creating visually appealing and highly functional websites that help businesses and individuals establish a strong online presence. With a focus on user experience and modern design trends, I deliver websites that not only look great but also perform exceptionally well."</p>
+                        <a href="#">"Learn more"</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-----------------------------Portfolio-------------------------->
+        <div id="portfolio">
+            <div class="container">
+                <h1 class="sub-title">My Work</h1> 
+                <div class="work-list">
+                    <div class="work">
+                        <img src="Pictures/Starbucks.png">
+                        <div class="layer">
+                            <h3>Starbucks Landing Website Page</h3>
+                            <p>Discover the perfect blend of rich flavors and warm moments at Starbucks. Whether you're a coffee connoisseur or new to our brews, there's something special waiting for you.</p>
+                            <a href="C:\Users\Admin\demo.html" target="_blank"><i class="fa fa-external-link" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="Pictures/Calculator.png">
+                        <div class="layer">
+                            <h3>Calculator using HTML and CSS</h3>
+                            <p>Our sleek and functional web calculator is designed to make your calculations quick and easy.</p>
+                            <a href="C:\Users\Admin\happy.html" target="_blank"><i class="fa fa-external-link" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="btn">See More</a>
+            </div>
+        </div>
+        <!-------------contact--------------->    
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contact Me</h1>
+                        <p><i class="fa fa-paper-plane" aria-hidden="true"></i>vibhu01sahu@gmail.com</p>
+                        <p><i class="fa fa-phone-square" aria-hidden="true"></i>1234567890</p>
+                        <div class="social-icons">
+                            <a href="https://facebook.com"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+                            <a href="https://www.linkedin.com/in/vibhuti-sahu-270792270"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+                            <a href="https://www.instagram.com/vibhu10105"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                            <a href="https://twitter.com"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+                        </div>
+                         <a href="Downloads/my-cv.pdf" download class="btn btn2">Download CV</a>
+                    </div>
+                    <div class="contact-right">
+                        <form name="submit-to-google-sheet">
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                            <input  type="email" name="Email" placeholder="Your Email" required>
+                            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                            <button type="submit" class="btn btn2">Submit</button>
+                        </form> 
+                        <span id="msg">hello</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <script>
+
+            var tablinks = document.getElementsByClassName('tab-links')
+            var tabcontents = document.getElementsByClassName('tab-contents')
+            function opentab(tabname){
+                for(tablink of tablinks){
+                    tablink.classList.remove("active-link")
+                }
+                for(tabcontent of tabcontents){
+                    tabcontent.classList.remove("active-tab")
+                }
+                event.currentTarget.classList.add("active-link")
+                document.getElementById(tabname).classList.add("active-tab")
+            }
+        </script>
+        
+        <script>
+            var sidemeu = document.getElementById("sidemenu");
+
+
+            function openmenu(){
+                sidemeu.style.right = "0";
+            }
+            function closemenu(){
+                sidemeu.style.right = "-200px";
+            }
+        </script>
+        <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbzFzvQQZgkGMwA4SIwvfOBDdzzXzcETy7E3xffwkOD1spPSYZ9bZjHkmSTD10HJmS6hFg/exec'
+            const form = document.forms['submit-to-google-sheet']
+            const msg = document.getElementById("msg")
+          
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => {
+                    msg.innerHTML = "Mesage sent sucessfully"
+                    setTimeout(function(){
+                        msg.innerHTML = ""
+                    },5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+            })
+          </script>
+    </body>
+</html>
